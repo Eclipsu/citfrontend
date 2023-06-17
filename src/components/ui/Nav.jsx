@@ -4,16 +4,18 @@ import Logo from "@/../public/logo.svg";
 
 export default function Nav() {
   return (
-    <header className="text-gray-600 body-font shadow-lg w-screen">
+    <header className=" body-font shadow-sm w-screen sticky top-0 z-10 text-black bolder font-semibold  inset-0 bg-white opacity-70 backdrop-blur-3xl">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Image
-          className="cursor-pointer"
-          src={Logo}
-          alt="CCRC IT Club logo"
-          height={40}
-          width={40}
-        />
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <Link href={"/"}>
+          <Image
+            className="cursor-pointer"
+            src={Logo}
+            alt="CCRC IT Club logo"
+            height={40}
+            width={40}
+          />
+        </Link>
+        <nav className="md:ml-auto flex flex-wrap items-center text-xl justify-center">
           <Link href={"#"} className="mr-5 hover:text-blue-500 transition duration-300">
             Home
           </Link>

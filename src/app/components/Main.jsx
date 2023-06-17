@@ -11,21 +11,16 @@ export default function components() {
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
             CCRC IT Club
           </h1>
-          <p class="mb-8 leading-relaxed">
-            KUCC is a non-profit, independent club formed by students of the Department of Computer
-            Science and Engineering in the year 1997. Being registered as the first club of
-            Kathmandu University with the registration number 001/1997 in the Student Welfare, KUCC
-            has worked in the field of ICT for twenty years. KUCC has more than 1000 members from
-            Department of Computer Science and Engineering. Kathmandu University Computer Club
-            (KUCC) is a student wing of the Department of Computer Science and Engineering which was
-            established with a goal to engage and aware students in the technological research and
-            development, most prominently in the ICT field and at the same time provides a common
-            platform for young and aspiring individuals to exhibit their ideas. Every year KUCC
-            cooperates and organizes numerous competitive as well as non-competitive events like
-            seminars, exhibitions, hackathon, skill development program and tutorial sessions to
-            name a few, with an unwavering intention to promote, develop and encourage emerging
-            technological advancement.
-          </p>
+          <div className="text-xl font-semibold">
+            <p class="leading-relaxed">CCRC IT Club is a student-led club in CCRC.</p>
+            <p>dedicated to IT, Computer science and technology</p>
+            <br />
+            <p>Being established in 2068BS,</p>
+            <p>
+              we aim to foster a culture of innovation and learning in the field of technology among
+              students.
+            </p>
+          </div>
         </div>
       </div>
     </section>

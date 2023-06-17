@@ -75,7 +75,7 @@ export default function Footer() {
               </h2>
               <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                 <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                  <label for="footer-field" class="leading-7 text-sm text-gray-600">
+                  <label htmlFor="footer-field" class="leading-7 text-sm text-gray-600">
                     Subscribe to keep being updated about future events
                   </label>
                   <input

@@ -6,9 +6,9 @@ import Statistics from "@/app/components/Statistics";
 export default function Home() {
   return (
     <>
-      <Main className="flex min-h-screen flex-col items-center justify-between p-24" />
-      <Members />
+      <Main className="flex min-h-screen justify-between p-24 " />
       <Statistics />
+      <Members />
       <Testimonial />
     </>
   );
