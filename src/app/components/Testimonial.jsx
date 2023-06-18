@@ -9,7 +9,7 @@ import React from "react";
 // }
 export default function components() {
   return (
-    <section class="text-gray-600 body-font absolute left-0 right-0 my-[-999]">
+    <section class="text-gray-600 body-font left-0 right-0">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">Testimonial</h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">What our members had to say</p>

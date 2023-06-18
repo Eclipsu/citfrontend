@@ -7,9 +7,8 @@ export default function Home() {
   return (
     <>
       <Main className="flex min-h-screen justify-between p-24 " />
-      <Statistics />
       <Members />
-      <Testimonial />
+      {/* <Testimonial /> */}
     </>
   );
 }

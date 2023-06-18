@@ -4,7 +4,7 @@ import Logo from "@/../public/logo.svg";
 
 export default function Nav() {
   return (
-    <header className=" body-font shadow-sm w-screen sticky top-0 z-10 text-black bolder font-semibold  inset-0 bg-white opacity-70 backdrop-blur-3xl">
+    <header className="fixed top-0 z-50 w-screen h-16 shadow-sm bg-white opacity-70 backdrop-blur-3xl items-center inset-0 flex">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link href={"/"}>
           <Image

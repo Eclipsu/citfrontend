@@ -1,18 +1,38 @@
-import Image from "next/image";
-import Logo from "@/../public/logo.svg";
-export default function components() {
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
+import { Navigation } from "swiper";
+
+const links = [
+  { name: "Get in touch", href: "#" },
+  { name: "Internship program", href: "#" },
+  { name: "Learn about us", href: "#" },
+  { name: "Sponsor us", href: "#" },
+];
+const stats = [
+  { name: "Members", value: "42" },
+  { name: "Workshops", value: "6" },
+  { name: "Events", value: "3" },
+  { name: "Alumni ", value: "1,200" },
+];
+
+export default function Example() {
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-          <Image class="object-cover object-center rounded" alt="CCRC hero" src={Logo} />
-        </div>
-        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            CCRC IT Club
-          </h1>
-          <div className="text-xl font-semibold">
-            <p class="leading-relaxed">CCRC IT Club is a student-led club in CCRC.</p>
+    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-2/5">
+      <img
+        src="https://images.unsplash.com/photo-1687116947527-f7e420413970?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+        alt=""
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+      />
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">CCRC IT Club</h2>
+          <div className="mt-6 text-xl font-semibold text-gray-300">
+            <p className="leading-relaxed">CCRC IT Club is a student-led club in CCRC.</p>
             <p>dedicated to IT, Computer science and technology</p>
             <br />
             <p>Being established in 2068BS,</p>
@@ -22,7 +42,26 @@ export default function components() {
             </p>
           </div>
         </div>
+        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            {links.map((link) => (
+              <a key={link.name} href={link.href}>
+                {link.name} <span aria-hidden="true">&rarr;</span>
+              </a>
+            ))}
+          </div>
+          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 md:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.name} className="flex flex-col-reverse">
+                <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
+                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
+                  {stat.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
