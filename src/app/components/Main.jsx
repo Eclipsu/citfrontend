@@ -18,19 +18,20 @@ const stats = [
   { name: "Events", value: "3" },
   { name: "Alumni ", value: "1,200" },
 ];
-
+// background-color: #000000;
+// opacity: 0.5;
 export default function Example() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 h-2/5">
-      <img
-        src="https://images.unsplash.com/photo-1687116947527-f7e420413970?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-        alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-      />
-
+    <div
+      className="relative isolate overflow-hidden bg-black bg-opacity-50 py-24 sm:py-32 h-2/5 bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage:
+          'linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url("https://images.unsplash.com/photo-1687116947527-f7e420413970")',
+      }}
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">CCRC IT Club</h2>
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">CCRC IT Club</h1>
           <div className="mt-6 text-xl font-semibold text-gray-300">
             <p className="leading-relaxed">CCRC IT Club is a student-led club in CCRC.</p>
             <p>dedicated to IT, Computer science and technology</p>

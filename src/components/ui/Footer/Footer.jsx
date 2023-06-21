@@ -112,6 +112,16 @@ export default function Footer() {
               >
                 Capital Collage and Research Center
               </a>
+              <span className="inline font-medium">
+                &nbsp; | Desgined and developed by
+                <Link
+                  href={"https://www.facebook.com/eclipsuu"}
+                  target="_blank"
+                  className="text-sky-600"
+                >
+                  &nbsp;Rajeev Shrestha
+                </Link>
+              </span>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
               <a className="text-gray-500">

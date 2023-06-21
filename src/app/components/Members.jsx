@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const people = [
   {
     name: "Hari Thapa",
@@ -47,8 +49,8 @@ export default function Example() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Meet our members
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            CCRCIT Club consists of dedicated and enthusiastic members who share a common interest
+          <p className="mt-6 text-lg leading-8  text-gray-600">
+            CCRC IT Club consists of dedicated and enthusiastic members who share a common interest
             in technology, information technology, and computer science. Together, we explore,
             learn, and grow in the ever-evolving world of technology.
           </p>
@@ -57,7 +59,13 @@ export default function Example() {
           {people.map((person) => (
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
-                <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                <Image
+                  className="h-16 w-16 rounded-full"
+                  src={person.imageUrl}
+                  alt={person.name + " " + person.role}
+                  width={1000}
+                  height={1000}
+                />
                 <div>
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
                     {person.name}

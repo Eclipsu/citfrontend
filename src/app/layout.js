@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "CCRC IT Club",
   description:
-    "CCRC IT Club is a high school club dedicated to IT, technology, and computer science. We are a part of CCRC and our aim is to foster a culture of innovation and learning in the field of technology among students.",
+    "CCRC IT Club: Making a difference | High School IT Club\nJoin CCRC IT Club, an innovative high school club focused on technology. Explore and learn with us!",
 };
 
 export default function RootLayout({ children }) {

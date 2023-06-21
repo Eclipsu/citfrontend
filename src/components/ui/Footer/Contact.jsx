@@ -25,7 +25,7 @@ export default function Contact() {
             marginwidth="0"
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d262.62459917930755!2d85.34358141208595!3d27.672751043423652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2snp!4v1686298434292!5m2!1sen!2snp"
           ></iframe>
-          <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+          {/* <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
             <div class="lg:w-1/2 px-6">
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 ADDRESS
@@ -40,7 +40,7 @@ export default function Contact() {
               </h2>
               <p class="leading-relaxed">986-1250474</p>
             </div>
-          </div>
+          </div> */}
         </div>
         <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
