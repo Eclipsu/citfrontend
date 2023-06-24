@@ -16,16 +16,16 @@ export default function Nav() {
           />
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-xl justify-center">
-          <Link href={"#"} className="mr-5 hover:text-blue-500 transition duration-300">
+          <Link href={"/"} className="mr-5 hover:text-blue-500 transition duration-300">
             Home
           </Link>
-          <Link href={"#"} className="mr-5 hover:text-blue-500 transition duration-300">
+          <Link href={"/members"} className="mr-5 hover:text-blue-500 transition duration-300">
             Members
           </Link>
           <Link href={"#"} className="mr-5 hover:text-blue-500 transition duration-300">
             Events
           </Link>
-          <Link href={"#"} className="mr-5 hover:text-blue-500 transition duration-300">
+          <Link href={"/notice"} className="mr-5 hover:text-blue-500 transition duration-300">
             Notice
           </Link>
         </nav>

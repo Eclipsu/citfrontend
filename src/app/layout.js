@@ -1,4 +1,5 @@
 import "./globals.css";
+import "tailwindcss/tailwind.css";
 import { Inter } from "next/font/google";
 
 // Ui components
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="overflow-x-hidden">
         <Nav />
-        <div className="bg-slate-50">{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </body>
     </html>

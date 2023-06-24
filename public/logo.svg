@@ -2,7 +2,7 @@
 <g clip-path="url(#clip0_1_3)">
 <g filter="url(#filter0_df_1_3)">
 <rect x="49" y="110" width="74" height="45" fill="white"/>
-<rect x="50" y="111" width="72" height="43" stroke="black" stroke-width="2"/>
+<rect x="50" y="111" width="72" height="43" stroke="black" strokeWidth="2"/>
 </g>
 <g filter="url(#filter1_df_1_3)">
 <rect x="60" y="202" width="51" height="258" fill="#04699F"/>
