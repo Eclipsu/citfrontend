@@ -1,15 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-export const metadata = {
-  title: "404 — Page Not Found | CCRC IT Club",
-  description: "Oops! Are you lost ? Page you requested does not exist.",
-};
+import Head from "next/head";
 
 export default function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+      <Head>
+        <title>404 — Page Not Found | CCRC IT Club</title>
+      </Head>
       <Image
         src={"/404-page.png"}
         alt="404-page-not-found"

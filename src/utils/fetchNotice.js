@@ -1,6 +1,6 @@
-import axios from "axios";
+console.log(process.env.NEXT_PUBLIC_BASE_URL);
 export async function fetchAllNotice() {
-  const res = await fetch(`http://127.0.0.1:1337/api/notices?populate=*`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/notices?populate=*`, {
     next: { revalidate: 60 },
   });
   if (!res.ok) return undefined;
@@ -9,7 +9,7 @@ export async function fetchAllNotice() {
 }
 
 export async function fetchNotice(slug) {
-  const res = await fetch(`http://127.0.0.1:1337/api/notices/${slug}?populate=*`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/notices/${slug}?populate=*`, {
     next: { revalidate: 60 },
   });
   if (!res.ok) return undefined;
